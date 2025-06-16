@@ -9,6 +9,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <title>𝚂𝚊𝚕𝚎𝚑 ☠</title>
+       <audio id="bg-audio" loop>
+  <source src="#" type="audio/mpeg">
+</audio>
+
+    <script>
+        const audio = document.getElementById('bg-audio');
+        const enableAudio = () => {
+            audio.play();
+            document.removeEventListener('click', enableAudio);
+        };
+        document.addEventListener('click', enableAudio);
+    </script>
     <style>
         body {
             background-image: url('4ff9636898342fb1bf8b5c6701708145.jpg');
