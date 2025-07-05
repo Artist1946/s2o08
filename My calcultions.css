@@ -198,3 +198,53 @@ ul li a:hover span:nth-child(4) {
     background: #0e0e0d;
     /* لون الأطراف عند التحويم */
 }
+/* التصميم الافتراضي (للكمبيوتر) */
+
+body {
+    background-color: #0d1117;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    padding: 40px;
+}
+
+.header h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.description {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* ✅ تصميم خاص للجوال */
+
+@media (max-width: 768px) {
+    body {
+        background-color: #1a1a1a;
+        padding: 20px;
+    }
+    .header h1 {
+        font-size: 28px;
+    }
+    .description {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Btn {
+        width: 90%;
+        height: 50px;
+        margin: 5px 0;
+    }
+    .svgIcon {
+        width: 20px;
+        height: 20px;
+    }
+}
