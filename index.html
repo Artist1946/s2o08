@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        const titleText = "𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝗺𝘆 𝗽𝗮𝗴𝗲 ☠";
+        let index = 0;
+
+        function animateTitle() {
+            document.title = titleText.slice(0, index);
+            index++;
+            if (index > titleText.length) index = 0;
+            setTimeout(animateTitle, 200); // سرعة الحركة
+        }
+
+        animateTitle();
+    </script>
+
+    <link rel="icon" href="262a8307134d65158eaf71cd073b773f.jpg">
+    <link rel="stylesheet" href="My calcultions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <audio id="bg-audio" loop autoplay muted>
+    <source src="quran.mp3" type="audio/mpeg">
+  </audio>
+
+    <div class="main-content">
+        <img src="262a8307134d65158eaf71cd073b773f.jpg" alt="صورة شخصية" class="avatar">
+
+        <h1 class="typing"></h1>
+        <p class="intro">I'm Saleh, a developer & designer. I love coding and creating unique experiences.</p>
+
+        <div class="social">
+            <a href="https://facebook.com/s.2o08" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com/Artist1946" class="github"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/s.2o08" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://open.spotify.com/user/..." class="spotify"><i class="fab fa-spotify"></i></a>
+            <a href="https://snapchat.com/add/s.2o08" class="snapchat"><i class="fab fa-snapchat-ghost"></i></a>
+            <a href="https://discord.gg/..." class="discord"><i class="fab fa-discord"></i></a>
+
+        </div>
+    </div>
+
+
+
+    <div class="bottom-circle">
+        <span> © جميع حقوق لصلوح </span>
+    </div>
+
+    <script src="My calcultions.JS"></script>
+
+</body>
+
+</html>
