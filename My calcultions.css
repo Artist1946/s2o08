@@ -1,0 +1,194 @@
+/* ------------------------------------
+   الأساسيات (Body)
+------------------------------------ */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(#0d1117, #050608);
+    font-family: 'Cairo', sans-serif;
+    color: #789151a6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+/* ------------------------------------
+   المحتوى الرئيسي
+------------------------------------ */
+
+.main-content {
+    max-width: 700px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ------------------------------------
+   الصورة الشخصية (Avatar)
+------------------------------------ */
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #789151a6;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+
+/* ------------------------------------
+   الفقرة التعريفية
+------------------------------------ */
+
+.intro {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #789151a6;
+}
+
+
+/* ------------------------------------
+   حاوية الأزرار
+------------------------------------ */
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    /* مسافة بين الأزرار */
+    margin-top: 20px;
+}
+
+
+/* الزر العام */
+
+.Btn {
+    width: 70px;
+    height: 70px;
+    border: none;
+    background-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.Btn:hover {
+    transform: scale(1.1);
+}
+
+
+/* حاوية الأيقونة */
+
+.svgContainer {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+
+/* شكل الأيقونة */
+
+.svgIcon {
+    width: 32px;
+    height: 32px;
+    fill: white;
+}
+
+
+/* الخلفيات حسب نوع الزر */
+
+.github .svgContainer {
+    background: radial-gradient(circle at center, #6e40c9, #1e1b2e);
+}
+
+.snapchat .svgContainer {
+    background: radial-gradient(circle at center, #FFFC00, #1e1b2e);
+}
+
+.facebook .svgContainer {
+    background: radial-gradient(circle at center, #1877F2, #1e1b2e);
+}
+
+.spotify .svgContainer {
+    background: radial-gradient(circle at center, #1DB954, #1e1b2e);
+}
+
+.instagram .svgContainer {
+    background: radial-gradient(circle at center, #bc1888, #1e1b2e);
+}
+
+.discord .svgContainer {
+    background: radial-gradient(circle at center, #5865F2, #1e1b2e);
+}
+
+
+/* ------------------------------------
+   الحقوق أسفل الصفحة
+------------------------------------ */
+
+.bottom-circle {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #151616;
+    color: #f6f6f7;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #1c1d1c;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1rem;
+    white-space: nowrap;
+    z-index: 1000;
+    cursor: default;
+}
+
+
+/* ------------------------------------
+   Responsive - الجوال
+------------------------------------ */
+
+@media (max-width: 600px) {
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+    .intro {
+        font-size: 0.9rem;
+    }
+    .Btn {
+        width: 50px;
+        height: 50px;
+    }
+    .svgIcon {
+        width: 24px;
+        height: 24px;
+    }
+    .buttons-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
