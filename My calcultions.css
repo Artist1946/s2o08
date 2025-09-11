@@ -5,9 +5,9 @@
 body {
     margin: 0;
     padding: 0;
-    background: radial-gradient(#0d1117, #050608);
+    background: radial-gradient(#6e7d94c4, #353333);
     font-family: 'Cairo', sans-serif;
-    color: #789151a6;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,8 +38,8 @@ body {
     height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #789151a6;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    border: 4px solid #ffffff;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
     margin-bottom: 20px;
 }
 
@@ -51,7 +51,7 @@ body {
 .intro {
     font-size: 1rem;
     margin-bottom: 15px;
-    color: #789151a6;
+    color: #ffffffe3;
 }
 
 
@@ -84,7 +84,7 @@ body {
     justify-content: center;
     transition: transform 0.3s ease;
     text-decoration: none;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(226, 218, 218, 0.05);
 }
 
 .Btn:hover {
@@ -92,55 +92,59 @@ body {
 }
 
 
-/* حاوية الأيقونة */
+/* ------------------------------------
+   أزرار السوشيال ميديا
+------------------------------------ */
 
-.svgContainer {
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    backdrop-filter: blur(6px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social a {
+    width: 55px;
+    height: 55px;
+    background-color: #1c1e22;
+    color: white;
+    border-radius: 50%;
+    font-size: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00000066;
 }
 
-
-/* شكل الأيقونة */
-
-.svgIcon {
-    width: 32px;
-    height: 32px;
-    fill: white;
+.social a:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 15px #ffffff40;
 }
 
-
-/* الخلفيات حسب نوع الزر */
-
-.github .svgContainer {
-    background: radial-gradient(circle at center, #6e40c9, #1e1b2e);
+.facebook:hover {
+    background: #1877F2;
 }
 
-.snapchat .svgContainer {
-    background: radial-gradient(circle at center, #FFFC00, #1e1b2e);
+.github:hover {
+    background: #333;
 }
 
-.facebook .svgContainer {
-    background: radial-gradient(circle at center, #1877F2, #1e1b2e);
+.instagram:hover {
+    background: #E4405F;
 }
 
-.spotify .svgContainer {
-    background: radial-gradient(circle at center, #1DB954, #1e1b2e);
+.spotify:hover {
+    background: #1DB954;
 }
 
-.instagram .svgContainer {
-    background: radial-gradient(circle at center, #bc1888, #1e1b2e);
+.snapchat:hover {
+    background: #FFFC00;
+    color: black;
 }
 
-.discord .svgContainer {
-    background: radial-gradient(circle at center, #5865F2, #1e1b2e);
+.discord:hover {
+    background: #5865F2;
 }
 
 
