@@ -1,1 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://artist1946.github.io/s2o08/sitemap.xml
 
