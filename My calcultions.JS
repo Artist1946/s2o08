@@ -1,4 +1,4 @@
-const text = "𝐌𝐲 𝐭𝐫𝐚𝐜𝐞 𝐰𝐢𝐥𝐥 𝐛𝐞 𝐬𝐚𝐧𝐜𝐭𝐢𝐟𝐢𝐞𝐝 𝐞𝐯𝐞𝐧 𝐢𝐟 𝐢𝐭 𝐢𝐬 𝐚 𝐬𝐜𝐚𝐫...";
+const text = "I am not a lonely person in life, but I chose this path...";
 const typingElement = document.querySelector(".typing");
 let i = 0;
 
@@ -11,3 +11,4 @@ function type() {
 }
 
 type();
+
