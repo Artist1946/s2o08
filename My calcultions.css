@@ -1,10 +1,11 @@
 /* ------------------------------------
    الأساسيات (Body)
 ------------------------------------ */
+
 body {
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle at top, #1a1a1a, #000000);
+    background: transparent;
     font-family: 'Cairo', sans-serif;
     color: #f5f5f5;
     display: flex;
@@ -14,9 +15,11 @@ body {
     text-align: center;
 }
 
+
 /* ------------------------------------
    المحتوى الرئيسي
 ------------------------------------ */
+
 .main-content {
     max-width: 700px;
     padding: 20px;
@@ -25,9 +28,11 @@ body {
     align-items: center;
 }
 
+
 /* ------------------------------------
    الصورة الشخصية (Avatar)
 ------------------------------------ */
+
 .avatar {
     width: 160px;
     height: 160px;
@@ -38,9 +43,11 @@ body {
     margin-bottom: 20px;
 }
 
+
 /* ------------------------------------
    الفقرة التعريفية
 ------------------------------------ */
+
 .intro {
     font-size: 1rem;
     margin-bottom: 15px;
@@ -48,9 +55,11 @@ body {
     letter-spacing: 0.5px;
 }
 
+
 /* ------------------------------------
    حاوية الأزرار
 ------------------------------------ */
+
 .buttons-container {
     display: flex;
     flex-direction: row;
@@ -59,9 +68,11 @@ body {
     margin-top: 20px;
 }
 
+
 /* ------------------------------------
    الزر العام
 ------------------------------------ */
+
 .Btn {
     width: 70px;
     height: 70px;
@@ -83,9 +94,11 @@ body {
     box-shadow: 0 0 25px rgba(201, 164, 76, 0.4);
 }
 
+
 /* ------------------------------------
    أزرار السوشيال ميديا
 ------------------------------------ */
+
 .social {
     display: flex;
     justify-content: center;
@@ -112,16 +125,36 @@ body {
     box-shadow: 0 0 20px rgba(201, 164, 76, 0.35);
 }
 
-.facebook:hover { background: #1877F2; }
-.github:hover   { background: #333; }
-.instagram:hover{ background: #E4405F; }
-.spotify:hover  { background: #1DB954; }
-.snapchat:hover { background: #FFFC00; color: #000; }
-.discord:hover  { background: #5865F2; }
+.facebook:hover {
+    background: #1877F2;
+}
+
+.github:hover {
+    background: #333;
+}
+
+.instagram:hover {
+    background: #E4405F;
+}
+
+.spotify:hover {
+    background: #1DB954;
+}
+
+.snapchat:hover {
+    background: #FFFC00;
+    color: #000;
+}
+
+.discord:hover {
+    background: #5865F2;
+}
+
 
 /* ------------------------------------
    الحقوق أسفل الصفحة
 ------------------------------------ */
+
 .bottom-circle {
     position: fixed;
     bottom: 20px;
@@ -139,26 +172,49 @@ body {
     z-index: 1000;
 }
 
+
 /* ------------------------------------
    Responsive - الجوال
 ------------------------------------ */
+
 @media (max-width: 600px) {
     .avatar {
         width: 120px;
         height: 120px;
     }
-
     .intro {
         font-size: 0.9rem;
     }
-
     .Btn {
         width: 50px;
         height: 50px;
     }
-
     .buttons-container {
         flex-direction: column;
         gap: 10px;
     }
+}
+
+
+/* خلفية الفيديو تغطي كامل الشاشة */
+
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    /* خلف المحتوى */
+    filter: brightness(0.45);
+    /* تغميق بسيط حتى يبان النص */
+}
+
+
+/* نضمن أن المحتوى فوق الفيديو */
+
+.main-content {
+    position: relative;
+    z-index: 10;
 }
